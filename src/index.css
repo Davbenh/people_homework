@@ -1,13 +1,59 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: rtl;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    background-color: blue;
+    padding: 20px 0;
+    width: 100%;
+}
+
+input {
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    width: 500px;
+}
+
+ul :nth-child(odd) {
+    background-color: aqua;
+}
+
+ul :nth-child(even) {
+    background-color: rgb(151, 151, 151);
+}
+
+.results {
+    background-color: bisque;
+    width: 500px;
+}
+
+.pages {
+    color: rgb(15, 116, 149);
+    font-size: larger;
+}
+
+.pages span {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.userList {
+    cursor: pointer;
 }
